@@ -120,8 +120,8 @@ addLayer("r", {
         return ("Relics")
     },
     achievements: {
-        rows: 12,
-        cols: 4,
+        rows: 1,
+        cols: 1,
         11: {
             name: "T1: Flux",
 		    done() { return player.w.points.gte(4500) },
@@ -130,7 +130,7 @@ addLayer("r", {
     },
 	tabFormat: [
 		"blank", 
-		["display-text", function() { return "Relics: "+player.r.achievements.length+"/"+(Object.keys(tmp.a.achievements).length-2) }], 
+		["display-text", function() { return "Relics: "+player.r.achievements.length+"/"+(Object.keys(tmp.r.achievements).length-2) }], 
 		"blank", "blank",
 		"relics",
 	],
